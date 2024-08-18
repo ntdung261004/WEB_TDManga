@@ -1,0 +1,640 @@
+body{
+    background-color:#18191a;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dautrang{
+    padding: 1cm;
+    margin-top: 0.5cm;
+    padding-top: 0.5cm ;
+}
+.title{
+    float: left;
+    text-align: center;
+    padding-top: -1cm;
+    margin-top: -1cm;
+    width: 50%;
+    margin-left: 9.55cm;
+}
+.tilte>h1{
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+.login{
+    float: left;
+    width: 20%;
+    margin: 20px;
+    margin-top: -0.5cm;
+    margin-left: 1cm;
+}
+.btn_login{
+    width: 120px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 45px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.login>a{
+    text-decoration: none;
+    color: white;
+}
+.login>a:hover{
+    color: black;
+}
+.login>a>Button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+br,hr{
+    clear: both;
+}
+hr{
+    margin-bottom: 0px;
+}
+
+
+.thanhchucnang{
+    background-color: black;
+    padding-top: 0px;
+    padding-bottom: 55px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.thanhcongcu{
+    margin-left: 1cm;
+    padding-left: 0.5cm;
+    float: left;
+    text-align: center;
+    width: 70%;
+    background-color: black;
+    border-radius: 7.5px 0 0 7.5px;
+}
+
+.thanhcongcu>ul>li{
+    display: inline-block;
+    position: relative;
+}
+.thanhcongcu>ul>li>a{
+    color: white;
+    margin-left: 0.05cm;
+    padding-top: 0.41cm;
+    padding-bottom: 0.43cm;
+    padding-right: 0.5cm;
+    padding-left: 0.5cm;
+    text-decoration: none;
+}
+
+.thanhcongcu>ul{
+    margin-left: -1.3cm;
+    list-style: none;
+    text-align: center;
+}
+
+.thanhcongcu>ul>li>a:hover{
+    background-color: red;
+    color: white;
+    background-size: 100%;
+}
+
+.thanhcongcu>ul>li>ul>li>a{
+    background-color: black;
+    display: block;
+    line-height: 30px;
+    padding:  10px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: smaller;
+}
+.thanhcongcu>ul>li>ul>li>a:hover{
+    background-color: red;
+    color: white;
+}
+.thanhcongcu>ul>li>ul{
+    position: absolute;
+    z-index:999;
+    display: none;
+    padding: 0px;
+    margin: 17px 0;
+    list-style: none;
+    border-radius: 3px;
+    width: 96px;
+    box-shadow: 0 0 1px gray;
+}
+.thanhcongcu>ul>li:hover>ul{
+    display: block;
+}
+
+form>Button:hover{
+    background-color: red;
+    color: white;
+}
+button>g:hover{
+    background-color: red;
+    color: white;
+    background-size: 100%;
+    text-decoration: red;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+  
+.searchTerm {
+    width: 100%;
+    border: 3px solid red;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: black;
+}
+  
+.searchTerm:focus{
+    color: black;
+}
+  
+.searchButton {
+    width: 100px;
+    height: 36px;
+    border: 1px solid red;
+    background: red;
+    text-align: center;
+    color: black;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: smaller;
+}
+  
+.wrap{
+    background-color: black;
+    float: right;
+    width: 20%;
+    margin-top: 0px;
+    margin-right: 1cm;
+    padding: 0.23cm;
+    padding-left: 0cm;
+    padding-right: 0cm;
+    padding-bottom: 9.5px;
+    border-left: solid 2.7px black;
+    border-radius: 0 7.5px 7.5px 0;
+}
+
+
+
+
+
+
+
+
+dau1{
+    color: white;
+    padding-left: 2.7cm;;
+    cursor: pointer;
+    margin-top: -50px;
+
+}
+dau1:hover{
+    text-decoration: underline;
+    color: red;
+}
+dau2{
+    color: white;
+    padding-left: 2.7cm;;
+    cursor: pointer;
+    margin-top: -50px;
+}
+dau2:hover{
+    text-decoration: underline;
+    color: red;
+}
+dau3{
+    color: white;
+    padding-left: 2.7cm;;
+    cursor: pointer;
+    margin-top: -50px;
+
+}
+dau3:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+
+
+.TieuDe{
+    float: left;
+    width: 60%;
+    margin-left: 125px;
+}
+.TieuDe>.TruyenCapNhat>.items{
+    float: left;
+    width: 25%;
+    cursor: pointer;
+}
+.TieuDe>.TruyenCapNhat>.items>p{
+    color: white;
+    float: center;
+    text-align: center;
+    width: 90%;
+    padding-left: -50px;
+    padding-right: -50px;
+    margin-top: 2.5px;
+}
+.TieuDe>.TruyenCapNhat>.items>p:hover{
+    color: red;
+}
+
+
+
+.TieuDe>.TruyenDaHoanThanh>.items{
+    float: left;
+    width: 25%;
+    cursor: pointer;
+}
+.TieuDe>.TruyenDaHoanThanh>.items>p{
+    color: white;
+    float: center;
+    text-align: center;
+    width: 90%;
+    padding-left: -50px;
+    padding-right: -50px;
+}
+.TieuDe>.TruyenDaHoanThanh>.items>p:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.items>hinh>img{
+    border-radius: 20px;
+    transition: all 1s;
+}
+.items>hinh>img:hover{
+    opacity: 0.7;
+    -webkit-transform: scale(1.05); transform: scale(1.05);
+}
+
+
+
+
+.GoiY{
+    background-color: black;
+    border-radius: 15px;
+    width: 24%;
+    float: left;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+.GoiY>.KhungGoiY{
+    padding-right: -25px;
+}
+.GoiY>.KhungGoiY>p{
+
+    color: white;
+    margin-right: 0px;
+}
+
+.GoiY>.KhungGoiY2>.btn_DocMangaNgauNhien{
+    float: left;
+    margin-left: 90px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 2.5px;
+    margin-bottom: 15px;
+    border-radius: 7.5px;
+    border: none;
+    cursor: pointer;
+}
+.GoiY>.KhungGoiY2>.btn_DocMangaNgauNhien:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+.GoiY2{
+    background-color: black;
+    border-radius: 15px;
+    width: 24%;
+    float: left;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+.GoiY2>.KhungGoiY3{
+    color: white;
+    width: 100%;
+}
+.GoiY2>.KhungGoiY3>.names{
+    float: left;
+    width: 50%; 
+}
+.GoiY2>.KhungGoiY3>.names>p{
+    margin: 2.5px;
+    width: 100%;
+    padding-top: 2.5px;
+    padding-right: 1px;
+    cursor: pointer;
+    float: left;
+}
+.GoiY2>.KhungGoiY3>.names>p:hover{
+    color: red;
+    transform: translateY(-1.5px);
+}
+
+.GoiY2>.KhungGoiY3>.chaps{
+    float: right;
+    width: 50%;
+}
+.GoiY2>.KhungGoiY3>.chaps>p{
+    margin: 2.5px;
+    width: 100%;
+    padding-top: 2.5px;
+    padding-right: 1px;
+    float: right;
+    color: red;
+    text-align: right;
+}
+
+
+
+.ThaoLuan{
+    background-color: black;
+    border-radius: 15px;
+    width: 24%;
+    float: left;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 10px;
+    margin-top: 50px;
+}
+.ThaoLuan>.KhungThaoLuan{
+    color: white;
+    width: 100%;
+}
+.ThaoLuan>.KhungThaoLuan>.BinhLuan{
+    width: 80%;
+    border: solid 1px black;
+    float: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 14px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 20px
+}
+
+.ThaoLuan>.KhungThaoLuan>.comments>b{
+    color: red;
+    float: left;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.ThaoLuan>.KhungThaoLuan>.comments>a{
+    color: white;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.ThaoLuan>.KhungThaoLuan>.btn_DocThem{
+    float: left;
+    margin-left: 97.5px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 2.5px;
+    margin-bottom: 15px;
+    border-radius: 7.5px;
+    border: none;
+    cursor: pointer;
+}
+.ThaoLuan>.KhungThaoLuan>.btn_DocThem:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+.XemThem{
+    float: center;
+    margin-left: 41%;
+}
+.btn_XemThem{
+    width: 120px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.btn_XemThem:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+.endpage1>p{
+    padding: 1px;
+    color: white;
+    font-size: smaller;
+
+}
+.endpage1>h2{
+    padding: 1px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.endpage1>p{
+    margin-top: 0px;
+}
+.endpage1{
+    float: left;
+    width: 40%;
+    margin-left: 2cm;
+}
+.endpage1>p>a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.endpage2{
+    padding: 1px;
+    margin-top: 10px;
+    float: left;
+    text-align: right;
+    width: 40%;
+    margin-left: 150px;
+}
+.endpage2>a{
+    text-align: end;
+    color: white;
+    font-size: smaller;
+}
+
+.formdki{
+    background-color: black;
+    text-align: left;
+    float: center;
+    width: 15%;
+    padding: 20px 50px;
+    margin: 5px 600px;
+}
+.formdki>label{
+    float: left;
+    color: red;
+    font-weight: bolder;
+}
+.formdki>a{
+    font-weight: 300;
+    color: grey;
+    cursor: pointer;
+}
+.formdki>p{
+    font-weight: 300;
+    color: grey;
+    cursor: pointer;
+}
+.formdki>a:hover{
+    text-decoration: underline;
+}
+
+.formdki>p>a{
+    font-weight: 300;
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+}
+.formdki>p>a:hover{
+    text-decoration: underline;
+}
+.formdki>input:focus{
+    box-shadow: 0 0 3px red;
+}
+.formdki>.button{
+    background-color: red;
+    border-radius: 15px;
+    color: white;
+    padding: 5px 10px;
+}
+.formdki>.button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+html,body{
+    width: 100%; height: 100%; margin: 0; padding: 0; 
+}
+.slider-container{ 
+    height: 100%; 
+    width: 100%; 
+    position: relative; 
+    overflow: hidden; 
+    text-align: center;
+    margin-bottom: -50px;
+} 
+.menu{ 
+    position: absolute; 
+    left: 0; 
+    z-index: 900; 
+    width: 100%; 
+    bottom: 0; 
+    margin-bottom: 50px;
+} 
+.menu>label{ 
+    cursor: pointer; 
+    display: inline-block; 
+    width: 16px; 
+    height: 16px; 
+    background: #fff; 
+    border-radius: 50px;
+    margin: 0 .2em 1em; 
+    transition: all .3s ease;
+}
+.menu>label:hover{
+    background: red;
+   
+} 
+
+.slide{ 
+    float: center;
+    width: 80%; 
+    height: 65%; 
+    position: absolute; 
+    top: 0; 
+    left: 100%; 
+    z-index: 10; 
+    padding: 8em 1em 0; 
+    background-size: cover; 
+    background-position: 50% 50%; 
+    transition: left 0s .75s; 
+    margin-left: 145px;
+} 
+[id^="slide"]:checked + .slide {
+    left: 0; z-index: 100; transition: left .65s ease-out;
+} 
+.slide-1{ 
+    background-image: url("https://storage-bravo.cuutruyen.net/file/cuutruyen/uploads/manga/558/panorama/processed-bbf342e932823177b57aa65885b19b3b.jpg"); 
+    border-radius: 20px;
+    cursor: pointer;
+} 
+.slide-2{ 
+    background-image: url("https://www.gematsu.com/wp-content/uploads/2022/11/Black-Clover-M-Garena_11-16-22.jpg"); 
+    border-radius: 20px;
+    cursor: pointer;
+} 
+.slide-3{ 
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/940/130/408/jujutsu-kaisen-sukuna-kugisaki-nobara-maki-zenin-mahito-jujutsu-kaisen-hd-wallpaper-preview.jpg"); 
+    border-radius: 20px;
+    cursor: pointer;
+}
+.slide-4{
+    background-image: url("https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f0dfabec20d9f3ce33add1a92d381c70.jpe");
+    border-radius: 20px;
+    cursor: pointer;
+}
+.slide-5{
+    background-image: url("https://gamen.vn/storage/2022/10/Bleach-Thousand-Year-Blood-War-Feature.jpg");
+    border-radius: 20px;
+    cursor: pointer;
+}
+.slide-6{
+    background-image: url("https://pic0.iqiyipic.com/image/20211206/f2/2e/a_100421840_m_601_en_m1_1080_608.jpg");
+    border-radius: 20px;
+    cursor: pointer;
+}

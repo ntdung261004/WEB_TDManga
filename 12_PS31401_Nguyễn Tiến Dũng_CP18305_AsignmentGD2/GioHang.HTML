@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDManga</title>
+    <link rel="stylesheet" href="CSS/TDMangaJavaScript.CSS"> 
+
+
+    <script>
+        var mangsp=[{
+            ma: 1,
+            hinh:"https://product.hstatic.net/200000343865/product/17---lmt_5987e8bdba6143f6b9a191d2f0c55329_large.jpg",
+        ten:"Chú thuật hồi chiến - Vol 17 - Bản giới hạn",
+        soluong:1,
+        gia: 65000
+        },
+        {
+            ma: 2,
+        hinh:"https://product.hstatic.net/200000343865/product/25_a479d632ff964a0eb73348136ef0f801_large.jpg",
+        ten:"Komi - Nữ thần sợ giao tiếp - Vol 25",
+        soluong:3,
+        gia: 25000
+        },
+        {
+            ma: 3,
+            hinh:"https://product.hstatic.net/200000343865/product/30_3034b16d5f82493182d82bceae5cfcce_large.jpg",
+        ten:"Học viện siêu anh hùng - Vol 30",
+        soluong:3,
+        gia: 25000
+        },
+        {
+            ma: 4,
+            hinh:"https://product.hstatic.net/200000343865/product/15---db_e17a41dc1ac54a8795cde140715ce95b_large.jpg",
+        ten:"Bluelock - Vol 15 - Bản đặc biệt",
+        soluong:3,
+        gia: 77000
+        },
+        {
+            ma: 5,
+            hinh:"https://product.hstatic.net/200000343865/product/29_9e0ae7804a324d4cbff5ffc89d67f7db_large.jpg",
+        ten:"Black Clover - Vol 29",
+        soluong:3,
+        gia: 25000
+        },
+        ];
+        
+        
+        for (var i = 0; i < mangsp.length; i++) {
+            var product = mangsp[i];
+            var imageElement = document.createElement("img");
+            imageElement.src = product.hinh;
+            document.body.appendChild(imageElement);
+        }
+        
+        
+        
+        function napsanpham(){
+          var t=document.getElementById("datarow");
+          t.innerHTML="";
+          for(var i=0; i<mangsp.length; i++){
+            var motsp=mangsp[i];
+            var tr=document.createElement("tr");
+            t.appendChild(tr);
+            tr.innerHTML=`
+          <tr>
+           <td class="ma">${motsp.ma}</td>
+           <td class="hinh"><img src="${motsp.hinh}"></td>
+           <td class="ten">${motsp.ten}</td>
+           <td class="soluong">
+            <input type=number value=${motsp.soluong}
+            onchange="suasoluong(${i},this.value)"  ></input>
+            </td>
+           <td class="gia">${motsp.gia}</td>
+           <td class="tong">${motsp.soluong*motsp.gia}</td>
+           <td class="Xóa"><img onclick="xoasp(${i})" src="Hinh/icons8-bin-24.png"></td>
+           </tr>
+          `;
+        }
+        tinhtongtien();
+        
+        
+        }
+           function suasoluong(index, value){
+            mangsp[index].soluong=value;
+            napsanpham();
+           }
+        
+           function xoasp(index){
+            mangsp.splice(index,1);
+            napsanpham();
+           }
+        
+           function tinhtongtien(){
+            var tong=0;
+            for(var i=0; i<mangsp.length; i++){
+                var motsanpham=mangsp[i];
+                var tonggia=motsanpham.soluong*motsanpham.gia;
+                tong=tong+tonggia;
+            }
+            document.getElementById("Tổng tiền").innerText=tong;
+           }
+        </script>
+
+
+
+</head>
+<body>
+    <div class="dautrang">
+        <div class="title">
+        
+            <h1> <b style="color: white">TDManga</b><c style="color: red">.vn</c></h1>
+
+        </div>
+
+        <div class="login">
+
+            <a href="DangNhap.HTML"><Button class="btn_login">Đăng nhập</Button></a>
+            <a href="DangKi.HTML"><Button class="btn_login">Đăng kí</Button></a>
+
+        </div>
+       
+    </div>
+
+    <br>
+        
+    <div class="thanhchucnang" style="margin-bottom: 25px;">
+
+        <div class="thanhcongcu">
+
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li>
+                    
+                    <a href="1">Thể loại</a>
+
+                    <ul>
+                        <li><a href="ConTrai.HTML">Con Trai</a></li>
+                        <li><a href="ConGai.HTML">Con gái</a></li>
+                        <li><a href="Shounen.HTML">Shounen</a></li>
+                        <li><a href="TheThao.HTML">Thể thao</a></li>
+                        <li><a href="HanhDong.HTML">Hành động</a></li>
+                        <li><a href="TrinhTham.HTML">Trinh thám</a></li>
+                        <li><a href="NgonTinh.HTML">Ngôn tình</a></li>
+                        <li><a href="HocDuong.HTML">Học đường</a></li>
+                        <li><a href="ChuyenSinh.HTML">Chuyển sinh</a></li>
+                        <li><a href="PhieuLuu.HTML">Phiêu lưu</a></li>
+                </ul>       
+                
+                </li>
+                <li><a href="2">Truyện HOT</a></li>
+                <li><a href="3">Xếp hạng</a></li>
+                <li><a href="ConGai.HTML">Con gái</a></li>
+                <li><a href="ConTrai.HTML">Con trai</a></li>
+                <li><a href="6">Lịch Sử</a></li>
+                <li><a href="7">Theo Dõi</a></li>
+                <li><a href="https://www.facebook.com/enteeDeyyy">Fanpage</a></li>
+            </ul>
+
+        </div>
+           
+        <div class="wrap">
+
+            <form action="" class="search" method="post">
+                <input type="text" class="searchTerm" placeholder="Bạn muốn tìm truyện gì?">
+                <button type="submit" class="searchButton">
+                    <img src="Hinh/30px-OOjs_UI_icon_search-ltr.svg.png" alt="">
+                </button>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+
+    <body onload="napsanpham()"></body>
+    <table border="1px" style="margin: auto; color: white; text-align: center;">
+        <tr>
+            <th style="color: red;">Mã SP</th>
+            <th style="color: red;"> Hình </th>
+            <th style="color: red; width: 300px;">Tên SP</th>
+            <th style="color: red;">Số Lượng</th>
+            <th style="color: red;">Giá</th>
+            <th style="color: red;">Tổng</th>
+            <th style="color: red;">Xóa</th>
+        </tr>
+
+    <tbody id="datarow">
+    <!--
+    <tr>
+    <td class="ma">1</td>
+    <td class="hinh"><img src="#"></td>
+    <td class="ten">Apple Ipad 4 Wifi 16GB</td>
+    <td class="soluong">2</td>
+    <td class="gia">11,800,000.00</td>
+    <td class="tong">23,600,000</td>
+    <td class="xoa"><button>xoa</button></td>
+    </tr>
+    -->
+    </tbody>
+
+    </table>
+    <div style="float: right; margin: 25px 275px 25px 0px; background-color: red; padding: 10px; border-radius: 5px; font-weight: 500; color: white; cursor: pointer;">Tổng tiền: <span id="Tổng tiền"></span></div>
+
+
+
+    
+
+
+
+
+    <hr style="float: center; width: 37cm; margin-left: 1.5cm; padding: 1px; margin-top: 1cm; background-color: white;">
+
+    <div class="endpage">
+
+        <div class="endpage1">
+
+            <h2> <b style="color: white">TDManga</b><c style="color: red">.vn</c></h2>
+            <p>
+                <b>Email:</b> <a>ntdung261004@gmail.com</a>
+                <br>
+                <b>Discord:</b> <a>ă đù ăng zũng#3754</a>
+                <br>
+                <b>Facebook:</b> <a>Nguyễn Tiến Dũng</a>
+            </p>
+
+        </div>
+
+        <div class="endpage2">
+
+            <a>
+                Bài tập Assignment môn Xây dựng trang Web(WEB1013).
+            </a>
+
+        </div>
+
+</body>
+</html>
